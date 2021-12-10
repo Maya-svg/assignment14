@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        form{
+            margin: 4%;
+            padding: 5%;
+            background-color: rgb(131, 182, 248);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+        }
+        h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            margin: 5%;
+            border: 5px solid rgb(14, 34, 145);
+        }
+        .button{
+            font-size: large;
+            margin-top: 3%; 
+        }
+    </style>
+</head>
+<body>
+    <h1> Stock Ticker </h1>
+    <!-- change code a little with heroku {port...|| 3000 look at slides }-->
+    <form method='post'   action='http://localhost:8080/process' > 
+        Company Identifier: <input type='text' id='input' name="user_input"><br>
+        <input type="radio" name="choice" value="symbol"> Symbol <br>
+        <input type="radio" name="choice" value= "name"> Name <br>
+        <input type="submit" class="button" value="Submit">
+    </form>
+</body>
+</html>
